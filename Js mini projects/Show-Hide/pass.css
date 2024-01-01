@@ -1,0 +1,71 @@
+body
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(195, 160, 211);
+}
+
+.container
+{
+    height: 55px;
+    width:400px;
+    background-color: white;
+    margin-top: 200px;
+}
+
+.input-box
+{
+ 
+    border: 2px solid rgb(90, 79, 79);
+    border-radius: 5px;
+    padding: 8px 20px;
+    display: flex;  
+    align-items: center;
+      
+}
+
+.input-box img
+{
+    height: 20px;
+    width:40px;
+    justify-content: flex-end;
+    cursor: pointer;
+}
+
+.input-box input
+{   
+     width: 100%;
+    padding: 10px 0; 
+    background: transparent;
+    border: 0;
+    outline: 0; 
+   
+}
+
+::placeholder
+{
+    color: rgb(26, 26, 21);
+    font-size:15px;
+    font-weight: 600;
+  
+
+}
+
+input::after
+{
+    color: rgb(228, 228, 216);
+}
+
+input:focus
+
+{
+    border: none;
+}
+
+#msg
+{
+    color: white;
+    display: none;
+    font-size: 20px;
+}

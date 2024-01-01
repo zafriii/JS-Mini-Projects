@@ -1,0 +1,158 @@
+*
+{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body
+{
+    background-color: #E4E9F7;
+}
+
+.image-text img
+{
+    height: 30px;
+}
+
+.sidebar
+{
+    position: fixed;
+    top:0;
+    left:0; 
+    height: 100%;
+    width: 250px;
+    padding: 10px 14px;
+    background-color: #fff;
+}
+
+.sidebar.close{
+    width:68px;
+    transition: all 2s ease-in-out;
+}
+
+.sidebar.close.open{
+    transition: all 2s ease-in-out;
+}
+
+
+
+.sidebar.close span.nav-text,.header-text{
+   opacity: 0;
+}
+
+
+
+.sidebar.close .sun-moon{
+   display: none;
+}
+
+
+
+.image-text
+{
+    display: flex;
+    align-items: center;
+    
+}
+
+.header-text span
+{
+    font-size: 20px;
+    font-weight: 500;
+    padding-left: 20px;
+}
+
+.sidebar .toggle
+{
+    position: absolute;
+    top:5%;
+    right:-15px;
+    height:30px;
+    width:30px;
+    background-color: rgb(88, 88, 226);
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.sidebar li
+{
+    height:50px;
+    list-style: none;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.search-box
+
+{
+    background-color: #E4E9F7;
+}
+
+.search-box input
+{
+    height: 100%;
+    width:100%;
+    outline: none;
+    border: none;
+    background-color: #E4E9F7
+   
+}
+
+.sidebar li i
+{
+    font-size: 20px;
+    padding: 10px 10px;
+}
+
+.sidebar li:hover
+{
+    background-color: rgb(88, 88, 226);
+    cursor: pointer;
+}
+
+.mode
+{
+    /* background-color: #E4E9F7 */
+}
+
+ .sun
+{
+    display: none;
+} 
+
+.toggle-switch
+{
+    height: 100%;
+    min-width: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.switch
+{
+    height: 20px;
+    width:50px;
+    background-color: #b3acac;
+    border-radius: 25px;
+    margin-left: 5px;
+
+}
+
+.circle
+{
+    height: 15px;
+    width:15px;
+    border-radius: 50%;
+    background-color: black;
+    margin-left: 5px;
+    margin-top: 2px;
+}
+
