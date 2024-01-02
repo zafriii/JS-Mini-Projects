@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="add.css">
+   
+</head>
+
+<body>
+
+    
+    
+    <div class="card">
+        
+        <img src="niha.png">
+        <h1>Send Friend Request</h1>
+        <button class="add">Add Friend</button>
+        <button class="remove">Remove</button>
+        <button class="block">Block</button>
+    </div>
+
+    
+
+    <script>
+
+        
+       var add = document.querySelector(".add");
+       var remove = document.querySelector(".remove");
+       var block = document.querySelector(".block");
+       var check = 0;
+
+       add.addEventListener("click", function(){
+        document.querySelector("h1").innerHTML = "You're friends now";
+        add.innerHTML = "Friends";
+        block.innerHTML = "Block";
+       })
+
+        remove.addEventListener("click", function(){  
+        document.querySelector("h1").innerHTML = "Unfriended";
+        add.innerHTML = "Add Friend";
+       })
+
+        block.addEventListener("click", function(){
+         if(check==0){
+        document.querySelector("h1").innerHTML = "Sucessfully blocked";
+        block.innerHTML = "Unblock";
+        add.innerHTML = "Add Friend";
+        check = 1;
+         }
+         else{
+            block.innerHTML = "Block";
+            document.querySelector("h1").innerHTML = "Unblocked";
+            check = 0;
+           
+         }
+       })
+
+
+    </script>
+
+
+</body>
+</html>
